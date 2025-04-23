@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #0077cc;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            background-color: #005fa3;
+            padding: 0.5rem 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 2rem;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .skills, .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background-color: white;
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #0077cc;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Hi, I'm Shreya Jose</h1>
+        <p>Aspiring Web Developer | Designer | Tech Enthusiast</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm Shreya Jose, a BTech Computer Science student with a passion for building user-friendly, responsive websites and applications. I specialize in front-end development and enjoy crafting clean, efficient code that brings designs to life. Whether it’s creating personal projects or collaborating on team assignments, I’m always eager to learn and grow in the world of technology. My goal is to contribute to impactful projects that make a difference and keep expanding my skills in web development and design.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills and Expertise</h2>
+        <div class="skills">
+            <div class="card">HTML & CSS</div>
+            <div class="card">JavaScript</div>
+            <div class="card">Responsive Design</div>
+            <div class="card">Git & GitHub</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="card">
+                <h3>Portfolio Website</h3>
+                <p>A responsive personal website showcasing my skills and projects.</p>
+            </div>
+            <div class="card">
+                <h3>Weather App</h3>
+                <p>A simple app that fetches weather data using an API.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:shreyajose87@gmail.com">shreyajose87@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/shreyajose" target="_blank">linkedin.com/in/shreyajose</a></p>
+        <p>GitHub: <a href="https://github.com/shreyajose" target="_blank">github.com/shreyajose</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Shreya Jose. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
